@@ -24,4 +24,24 @@ try {
     console.log(err)
 }
 
-console.log('qwertyuiop')
+
+//JavaScript hoistuje tylko deklaracje, a nie inicjalizacje. Przykład 1 nie daje takiego samego wyniku jak Przykład 2:
+
+//1:
+
+var xxxx = 5; // Initialize 
+var yyyy = 7; // Initialize 
+console.log(xxxx + " " + yyyy); // Display 
+
+//2:
+
+var xxxxx = 5; // Initialize 
+console.log(xxxxx + " " + yyyyy); // Display  - "yyyyy" pokazał się jako "undefined" w konsoli
+var yyyyy = 7; // Initialize 
+
+// podobna sytuacja:
+
+var a = 5; // Initialize 
+var b;     // Declare 
+console.log(a + " " + b);           // Display 
+b = 7;    // Assign 7 to y
