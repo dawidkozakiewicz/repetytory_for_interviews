@@ -28,4 +28,4 @@ const person3 = {
     lastName: "Doe"
 }
 
-console.log(person2.fullName.apply(person3, ["Oslo", "Norway"]));
+console.log(person2.fullName.apply(person3, ["Oslo", "Norway"])); // w call musiałyby być argumenty zamiast tablicy
