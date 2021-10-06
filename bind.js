@@ -27,7 +27,7 @@ console.log(someObj.someStr)
 
 const numbers = [1, 2];
 const addFn = numbers.push.bind(numbers); // pobieramy z tablicy "numbers" jej natywną metodę (natywną dla wszystkich tablic) jaką jest push(). 
-// Następnie wykonujemy na niej funkcję bind(numbers) i jako argument wstawiamy ją samą.
+// Następnie wykonujemy na niej funkcję bind(numbers) i jako argument wstawiamy ją samą (tablicę).
 // Dzięki temu pushowanie odbywało się będzie właśnie na niej bo od tej pory this === numbers:
 addFn(3);
 addFn(4)
