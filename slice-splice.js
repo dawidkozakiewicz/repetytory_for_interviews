@@ -15,3 +15,23 @@ const fruits2 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const myBest = fruits2.slice(-3, -1);  // użycie liczb ujemnych liczy od końca tablicy
 console.log(myBest)
 
+// *********************************************************** //
+
+// 2. splice()
+
+// Metoda splice() dodaje i/lub usuwa elementy tablicy.
+// splice() nadpisuje oryginalną tablicę.
+
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+fruits3.splice(2, 1, "Lemon", "Kiwi"); // Na pozycji 2 dodaj nowe elementy i usuń 1 element
+console.log(fruits3)
+
+
+const fruits4 = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+fruits4.splice(2, 2); // Na pozycji 2 usuń 2 eelmenty
+console.log(fruits4)
+
+
+
+
+
