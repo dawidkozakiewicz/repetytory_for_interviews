@@ -4,4 +4,6 @@ const cat = {
 
 const cat2 = cat.toString()
 
-console.log(cat2)
+function Janush(nose) {
+    this.nose = nose
+}
