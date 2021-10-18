@@ -14,12 +14,21 @@ function EnemyShoot(name, x, y) {
     this.x = x;
     this.y = y;
     this.type = "shooter";
+    console.log(`Tworzę przeciwnika: ${this.x}x${this.y}`);
+
 }
+
+EnemyShoot.prototype = Object.create(Enemy.prototype);
 
 EnemyShoot.prototype.shoot = function () {
     return this.name + " strzelam";
 }
 
-const enemyS = new EnemyShoot("Shooter", 20, 20);
+
+const enemyN = new Enemy("Normalny", 10, 15);
+console.log(enemyN.fly()); //Normalny latam
+// console.log(enemyN.shoot()); błąd - nie ma takiej metody
+
+const enemyS = new EnemyShoot("Shooter", 10, 20);
+console.log(enemyS.fly()); //Shooter latam
 console.log(enemyS.shoot()); //Shooter strzelam
-console.log(enemyS.__prototype__)
