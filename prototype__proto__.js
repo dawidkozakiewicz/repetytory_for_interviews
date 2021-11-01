@@ -20,5 +20,5 @@ let teacher = {
     subject: "Geography"
 }
 
-console.log(teacher.__proto__ === Object.prototype) // true
+console.log(teacher.__proto__ === Object.prototype) // true, wspólny
 
