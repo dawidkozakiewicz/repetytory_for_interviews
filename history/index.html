@@ -30,15 +30,19 @@
         ev.stopPropagation();
         history.replaceState({ id: 1 }, '', 'http://127.0.0.1:5500/hello');
         document.title = 'new string';
+        console.log(history);
       }
       function goTwo(ev) {
         ev.preventDefault();
         history.pushState({ id: 234 }, '', 'another.html');
+        console.log(history);
       }
       function goThree(ev) {
         ev.preventDefault();
         let num = Math.floor(Math.random() * 10000);
         history.pushState({ id: num }, '', `#${num}`);
+        document.title = num;
+        console.log(history);
       }
     </script>
   </body>
