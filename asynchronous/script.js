@@ -15,3 +15,15 @@ getDataPromise(5).then((data) => {
 }).catch((err) => {
     console.log(err)
 })
+
+async function getData() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/')
+    const data = await response.json()
+    return data
+}
+
+getData().then(data => console.log(data))
+
+
+
+
