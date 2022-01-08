@@ -18,3 +18,9 @@ const o3 = { c: 3 };
 
 const obj = Object.assign({}, o1, o2, o3);
 console.log(obj); //{ a: 1, b: 2, c: 3 }
+
+// const react = { title: 'React' };
+// const angular = { title: 'Angular', next: react };
+// const cloned = Object.assign({}, angular);
+// react.title = 'Vue';
+// console.log(cloned.title)
