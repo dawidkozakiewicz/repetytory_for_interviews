@@ -53,3 +53,5 @@ ob2.pet.kind = "pies";
 
 console.log(ob.pet.name, ob2.pet.name); //Feliks, Super Szamson
 console.log(ob.pet.kind, ob2.pet.kind); //cat, pies
+
+// innym sposobem na wykonanie kopii głębokiej jest skorzystanie z biblioteki lodash
