@@ -55,3 +55,7 @@ console.log(ob.pet.name, ob2.pet.name); //Feliks, Super Szamson
 console.log(ob.pet.kind, ob2.pet.kind); //cat, pies
 
 // innym sposobem na wykonanie kopii głębokiej jest skorzystanie z biblioteki lodash
+// Lodash – biblioteka programistyczna napisana w języku JavaScript[1]. 
+// Biblioteka powstała jako fork projektu underscore.js. 
+// Lodash, w odróżnieniu od podobnych bibliotek JavaScript, unika metod iteracyjnych,
+// na rzecz uproszczonych pętli, co przekłada się na mocno odchudzony kod[2].
